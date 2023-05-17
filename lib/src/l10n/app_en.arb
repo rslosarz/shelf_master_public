@@ -1,0 +1,40 @@
+{
+  "appTitle": "ShelfMaster",
+  "alertTitle": "Attention!",
+  "saveChangesCta": "Save",
+  "errorInfo": "Error",
+  "qrLabelCta": "QR Label",
+  "itemNameHint": "Name",
+  "assignedGroupsLabel": "Assigned groups",
+  "enterGroupHint": "Enter group...",
+  "assignedCategoriesLabel": "Assigned categories",
+  "enterCategoryHint": "Enter category...",
+  "deleteCta": "Delete",
+  "groupNavLabel": "Groups",
+  "itemNavLabel": "Items",
+  "categoryNavLabel": "Categories",
+  "beforeClosingDialogMessage": "Are you sure you want to leave the page without saving changes?",
+  "yes": "yes",
+  "no": "no",
+  "dismiss": "dismiss",
+  "removeGroupDialogMessage": "Are you sure you want to remove this group?\n\nAll items belonging to the group will remain untouched.",
+  "removeItemDialogMessage": "Are you sure you want to remove this item?",
+  "removeCategoryDialogMessage": "Are you sure you want to remove this category?\n\nAll items belonging to the category will remain untouched.",
+  "groupNameHint": "Group name",
+  "groupLocationHint": "Group location description",
+  "categoryNameHint": "Category name",
+  "searchHint": "Search...",
+  "sortOrderNameAsc": "Name Ascending",
+  "sortOrderNameDesc": "Name Descending",
+  "searchParamSortOrderLabel": "Sort Order",
+  "searchParamCategoryLabel": "Categories",
+  "groupLabelDocName": "groupLabels",
+  "selectedLabel": "Selected: {count}",
+  "@selectedLabel": {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "speechInfoTitle": "Speech Recognition",
+  "speechInfoMessage": "Say sth like: name/nazwa <Intended name> category/kategoria <Category1> <Category2>\n\nFor example: Name Wrench Size 14 Category Tools Wrench"
+}

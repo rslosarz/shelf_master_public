@@ -1,0 +1,143 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules: # http://dart-lang.github.io/linter/lints/options/options.html
+    # CODE STYLE
+    #naming
+    - camel_case_types
+    - camel_case_extensions
+    - constant_identifier_names
+    - file_names
+    - library_names
+    - package_prefixed_library_names
+    - package_names
+    - non_constant_identifier_names
+    #imports
+    - avoid_relative_lib_imports
+    - implementation_imports
+    - library_prefixes
+    #styling
+    - always_put_control_body_on_new_line
+    - curly_braces_in_flow_control_structures
+    #    - sort_constructors_first
+    - sort_pub_dependencies
+    - sort_unnamed_constructors_first
+
+    #DOCUMENTATION - TBD
+    - comment_references
+    # - package_api_docs
+    - slash_for_doc_comments
+
+    #CODE WRITING CONVENTIONS / CODE READABILITY / LANGUAGE UTILISATION
+    - annotate_overrides
+    - avoid_renaming_method_parameters
+    - avoid_shadowing_type_parameters
+    - omit_local_variable_types
+    - prefer_adjacent_string_concatenation
+    - prefer_collection_literals
+    - prefer_conditional_assignment
+    - prefer_equal_for_default_values
+    - prefer_function_declarations_over_variables
+    - prefer_if_null_operators
+    - prefer_initializing_formals
+    - prefer_interpolation_to_compose_strings
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - prefer_iterable_whereType
+    - prefer_null_aware_operators
+    - prefer_single_quotes
+    - prefer_spread_collections
+    - use_function_type_syntax_for_parameters
+    - use_rethrow_when_possible
+
+    #GOOD PRACTICES / PREVENTING BUGS
+    - always_declare_return_types
+    - always_require_non_null_named_parameters
+    - avoid_single_cascade_in_expression_statements
+    - avoid_slow_async_io
+    - await_only_futures
+    #- avoid_classes_with_only_static_members
+    - avoid_function_literals_in_foreach_calls #see: https://dart-lang.github.io/linter/lints/prefer_foreach.html
+    - avoid_private_typedef_functions
+    - avoid_returning_null
+    - avoid_returning_this
+    - avoid_setters_without_getters
+    - cancel_subscriptions
+    - close_sinks
+    - hash_and_equals
+    - overridden_fields
+    - prefer_const_constructors
+    - prefer_contains
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_final_in_for_each
+    - prefer_for_elements_to_map_fromIterable
+    - prefer_generic_function_type_aliases
+    - prefer_typing_uninitialized_variables
+    - null_closures
+    - use_setters_to_change_properties
+
+    #REDUNDANT/UNNECESSARY CODE
+    - avoid_annotating_with_dynamic
+    - avoid_bool_literals_in_conditional_expressions
+    - avoid_init_to_null
+    - avoid_null_checks_in_equality_operators
+    - avoid_types_on_closure_parameters
+    - avoid_return_types_on_setters
+    - empty_constructor_bodies
+    - unnecessary_await_in_return
+    - unnecessary_brace_in_string_interps
+    - unnecessary_const
+    - unnecessary_getters_setters
+    - unnecessary_lambdas
+    - unnecessary_new
+    - unnecessary_null_aware_assignments
+    - unnecessary_null_in_if_null_operators
+    - unnecessary_overrides
+    - unnecessary_parenthesis
+    - unnecessary_statements
+    - unnecessary_this
+    - type_init_formals
+
+    #SMELL CODE
+    - avoid_empty_else
+    - avoid_types_as_parameter_names
+    - avoid_returning_null_for_future
+    - control_flow_in_finally
+    - empty_catches
+    - empty_statements
+    - iterable_contains_unrelated_type
+    - list_remove_unrelated_type
+    - no_adjacent_strings_in_list
+    - no_duplicate_case_values
+    - only_throw_errors
+    - parameter_assignments
+    - recursive_getters
+    - test_types_in_equals
+    - throw_in_finally
+    - unawaited_futures
+    - unrelated_type_equality_checks
+    - valid_regexps
+    - void_checks
+
+analyzer:
+  #    strong-mode:
+  #    implicit-casts: false
+  #    implicit-dynamic: false
+
+  language:
+    strict-inference: true
+
+  errors:
+    argument_type_not_assignable: info
+    invalid_annotation_target: ignore
+
+  exclude:
+    - lib/**/*.freezed.dart
+    - lib/**/*.g.dart
+    - lib/**/*.pb.dart
+    - lib/**/*.pbenum.dart
+    - lib/**/*.pbgrpc.dart
+    - lib/**/*.pbjson.dart
+    - lib/**/*.pbserver.dart
+    - lib/intl_messages*.dart
